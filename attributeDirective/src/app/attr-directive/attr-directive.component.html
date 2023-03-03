@@ -1,0 +1,16 @@
+<p> <u>ng model Two Way Binding</u></p>
+<input type="text" [value]="name" (input)="name=getvalue($event)">
+Entered Value <h4>{{name}}</h4> <br>
+<input type="text" [value]="name1" #firstname (input)="getname(firstname.value)">
+Entered Value <h4>{{name1}}</h4> <br>
+<input type="text" [(ngModel)]="name2">
+Entered Value <h4>{{name2}}</h4> <br>
+<input type="text" [(ngModel)]="name2">
+Entered Value <h4>{{name2}}</h4> <br>
+<p><u>ngmodelchange</u></p>
+<input type="text" [(ngModel)]="modelChange" (keyup.enter)="change()">
+Entered Value <h4>{{modelChange}}</h4> 
+<input type="text" [(ngModel)]="modelChange" (ngModelChange)="change()">
+<br>
+<p> <u>ngclass</u></p>
+
